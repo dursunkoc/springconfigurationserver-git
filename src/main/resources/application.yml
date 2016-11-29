@@ -1,0 +1,16 @@
+server:
+  port: 8088
+security:
+  basic:
+    enabled: true
+  user:
+    name: dursun
+    password: dursun
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dursunkoc/springconfigserverrepo.git
+          search-paths:
+            - 'station*'
